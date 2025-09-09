@@ -161,7 +161,7 @@ strike you as either similar to or different from Python.
 > using the debugger in the same way. You might find it informative to try stepping through the
 > code to see what it is doing on a few iterations.
 
-## The Main Method
+## The lab1.Main Method
 
 In Python, any code that you write in a file will get run when you execute the file.
 This is not the case in Java. You must define a method called `main` in a class
@@ -231,7 +231,7 @@ a sequence of three git commands:
 
 - [X] Once you execute these commands, you can check your GitHub repository to confirm that the changes have been made there.
 
-- [ ] repeat the above steps for `README.md` (or try using the approach below).
+- [X] repeat the above steps for `README.md` (or try using the approach below).
 
 > Tip: You can also use IntelliJ to execute these same steps using the graphical user interface it provides.
 If you have followed the software installation instructions, you should see `Git` in the menu bar at the top.
@@ -258,43 +258,43 @@ Now, back to exploring the code!
 
 To briefly observe what private does, let's create a new class.
 
-- [ ] Right-click on `lab1` and select `New —> Java Class`. Name it `Main`. This will create a `Main.java` file.
+- [X] Right-click on `lab1` and select `New —> Java Class`. Name it `lab1.Main`. This will create a `lab1.Main.java` file.
 
 We'll write a main method which will attempt to call `FizzBuzz.doFizzBuzz` (or whatever you called
 your extracted helper method).
 
-- [ ] To quickly generate `main`, you can start typing `psvm` in IntelliJ and then press Enter to accept the
+- [X] To quickly generate `main`, you can start typing `psvm` in IntelliJ and then press Enter to accept the
 autocomplete — it will generate an empty "public static void main" (psvm) method for you. Neat!
 
-- [ ] In the body of this main method, type `FizzBuzz.`. You'll see that the private helper method does _not_
+- [X] In the body of this main method, type `FizzBuzz.`. You'll see that the private helper method does _not_
 appear in the autocomplete, but `FizzBuzz.main` does! If you wanted to be able to call the helper from
-inside `Main.java`, you would need to change the access modifier on the helper.
+inside `lab1.Main.java`, you would need to change the access modifier on the helper.
 It turns out that IntelliJ can help us out with this too!
 
 ### Task 3.1: Changing access modifiers using IntelliJ
 
-- [ ] In your main method in `Main.java`, try making a call to your private helper — something like `FizzBuzz.doFizzBuzz(5);`.
+- [X] In your main method in `lab1.Main.java`, try making a call to your private helper — something like `FizzBuzz.doFizzBuzz(5);`.
 
 You'll see that IntelliJ flags that you are trying to access something that is private. Unlike Python,
 Java won't even let you run the code when it detects this kind of violation of an access modifier (it is an
 error and not just a warning).
 
-- [ ] Hover over the error; IntelliJ will suggest some fixes.
+- [X] Hover over the error; IntelliJ will suggest some fixes.
 
-- [ ] Click `More actions...` and you'll see a list of the various possible access modifiers.
+- [X] Click `More actions...` and you'll see a list of the various possible access modifiers.
 These will be explained in more detail in your readings, but for now we can just make the method public.
 
-- [ ] Choose this fix and the error will go away. Try running `Main.java` to see if it outputs
+- [X] Choose this fix and the error will go away. Try running `lab1.Main.java` to see if it outputs
 what you expect.
 
-### Task 3.2: Calling `FizzBuzz.main` from `Main.main`
+### Task 3.2: Calling `FizzBuzz.main` from `lab1.Main.main`
 
-Suppose we wanted to execute a line like `FizzBuzz.main();` in `Main.main`. Why doesn't this work?
+Suppose we wanted to execute a line like `FizzBuzz.main();` in `lab1.Main.main`. Why doesn't this work?
 
-If you add this line to `Main.main`, IntelliJ will tell you the problem and suggest some fixes,
+If you add this line to `lab1.Main.main`, IntelliJ will tell you the problem and suggest some fixes,
 but neither of them will *directly* fix the problem.
 
-* Talk with your team to try to find the best way to resolve the problem so that you can run `Main.java` and
+* Talk with your team to try to find the best way to resolve the problem so that you can run `lab1.Main.java` and
 see the expected output of executing `FizzBuzz.main`. If you come up with different ways to do this,
 think about how they differ and which might be best.
 
@@ -303,7 +303,7 @@ through readings and coding exercises over the next few weeks.
 
 ### Task 3.3 Push your latest changes
 
-- [ ] Now that you've made some more changes to your repository, you should repeat the add, commit, and push process
+- [X] Now that you've made some more changes to your repository, you should repeat the add, commit, and push process
 for any files that you have changed if you haven't done so recently. Remember to include a descriptive commit message!
 
 ### Task 3.4 Pulling changes from GitHub
